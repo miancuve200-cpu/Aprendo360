@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendo360 - App Educativa</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #f0f4f8; padding: 2rem; }
+        header { text-align: center; margin-bottom: 3rem; }
+        h1 { color: #2c3e50; font-size: 2.2rem; }
+        p.subtitulo { color: #7f8c8d; font-size: 1.1rem; margin-top: 0.5rem; }
+        .grid-asignaturas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+        .boton-asignatura {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+            cursor: pointer;
+        }
+        .boton-asignatura:hover { transform: translateY(-6px); }
+        .boton-asignatura img { width: 85px; height: 85px; margin-bottom: 1rem; }
+        .boton-asignatura h3 { color: #2c3e50; font-size: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aprendo360</h1>
+        <p class="subtitulo">Tu espacio de aprendizaje</p>
+    </header>
+
+    <div class="grid-asignaturas">
+        <div class="boton-asignatura">
+            <img src="lengua-literatura.png" alt="Lengua y Literatura">
+            <h3>Lengua y Literatura</h3>
+        </div>
+        <div class="boton-asignatura">
+            <img src="ingles.png" alt="Inglés">
+            <h3>Inglés</h3>
+        </div>
+        <div class="boton-asignatura">
+            <img src="cultural-artistica.png" alt="Educación Cultural y Artística">
+            <h3>Educación Cultural y Artística</h3>
+        </div>
+        <div class="boton-asignatura">
+            <img src="educacion-fisica.png" alt="Educación Física">
+            <h3>Educación Física</h3>
+        </div>
+        <div class="boton-asignatura">
+            <img src="perfil.png" alt="Perfil">
+            <h3>Perfil</h3>
+        </div>
+    </div>
+</body>
+</html>
