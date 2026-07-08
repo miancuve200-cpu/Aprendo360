@@ -3,108 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Aprendo360</title>
+    <title>Aprendo360 - Tu espacio de aprendizaje</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { background-color: #f8f9fa; line-height: 1.6; color: #212529; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-        /* Encabezado igual al ejemplo */
-        .cabecera {
-            background-color: #0066cc;
-            color: white;
-            padding: 2rem;
+        body {
+            background-color: #f0f4f8;
+            padding: 2.5rem 1.5rem;
+        }
+
+        header {
             text-align: center;
+            margin-bottom: 3.5rem;
         }
-        .cabecera h1 { font-size: 2.2rem; margin-bottom: 0.8rem; }
-        .cabecera p { font-size: 1.2rem; opacity: 0.9; }
 
-        /* Contenido principal */
-        .contenido {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
+        h1 {
+            font-size: 2.8rem;
+            color: #2d3748;
+            margin-bottom: 0.6rem;
         }
-        .tarjeta {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+        .subtitulo {
+            font-size: 1.25rem;
+            color: #718096;
         }
-        h2 {
-            font-size: 1.8rem;
-            color: #212529;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #e9ecef;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        h3 {
-            font-size: 1.3rem;
-            color: #0066cc;
-            margin: 1.8rem 0 1rem;
-        }
-        p { margin-bottom: 1rem; text-align: justify; }
-        ul { margin-left: 1.8rem; margin-bottom: 1.2rem; }
-        li { margin-bottom: 0.6rem; }
-        .volver {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 0.7rem 1.5rem;
-            background-color: #0066cc;
-            color: white;
+
+        .boton {
+            background: #ffffff;
+            padding: 2rem 1rem;
+            border-radius: 20px;
+            text-align: center;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
         }
-        .volver:hover { background-color: #0052a3; }
-        .fecha {
-            text-align: right;
-            font-size: 0.9rem;
-            color: #6c757d;
-            margin-top: 2rem;
+
+        .boton:hover {
+            transform: translateY(-6px);
+        }
+
+        .icono {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            display: block;
+            color: #2b6cb0;
+        }
+
+        .nombre {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2d3748;
+            line-height: 1.4;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            color: #718096;
+        }
+
+        footer a {
+            color: #2b6cb0;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="cabecera">
-        <h1>Política de Privacidad</h1>
-        <p>Recurso Educativo Aprendo360 — Para aprendizaje y repaso académico</p>
+
+    <header>
+        <h1>Aprendo360</h1>
+        <p class="subtitulo">Tu espacio de aprendizaje</p>
+    </header>
+
+    <div class="grid">
+        <a href="lengua.html" class="boton">
+            <span class="icono">📖</span>
+            <div class="nombre">Lengua y Literatura</div>
+        </a>
+
+        <a href="matematicas.html" class="boton">
+            <span class="icono">➗</span>
+            <div class="nombre">Matemáticas</div>
+        </a>
+
+        <a href="ingles.html" class="boton">
+            <span class="icono">🗣️</span>
+            <div class="nombre">Inglés</div>
+        </a>
+
+        <a href="naturales.html" class="boton">
+            <span class="icono">🔬</span>
+            <div class="nombre">Ciencias Naturales</div>
+        </a>
+
+        <a href="sociales.html" class="boton">
+            <span class="icono">🌍</span>
+            <div class="nombre">Estudios Sociales</div>
+        </a>
+
+        <a href="artistica.html" class="boton">
+            <span class="icono">🎨</span>
+            <div class="nombre">Educación Cultural y Artística</div>
+        </a>
+
+        <a href="fisica.html" class="boton">
+            <span class="icono">⚽</span>
+            <div class="nombre">Educación Física</div>
+        </a>
+
+        <a href="perfil.html" class="boton">
+            <span class="icono">👤</span>
+            <div class="nombre">Perfil</div>
+        </a>
     </div>
 
-    <div class="contenido">
-        <div class="tarjeta">
-            <h2>Sobre esta política</h2>
-            <p>Esta herramienta educativa está diseñada para que estudiantes y usuarios practiquen, repasen y evalúen sus conocimientos mediante contenidos estructurados. Funciona exclusivamente con conexión a internet para cargar los materiales de estudio y actividades, <strong>sin incluir publicidad de ningún tipo</strong>.</p>
+    <footer>
+        <a href="privacidad.html">Política de Privacidad</a>
+        &nbsp;|&nbsp;
+        <a href="uso.html">Información de uso</a>
+        <br>
+        <small>© 2026 Aprendo360</small>
+    </footer>
 
-            <h3>Información que recopilamos</h3>
-            <p>Solo solicitamos y utilizamos los datos estrictamente necesarios para el funcionamiento de la aplicación:</p>
-            <ul>
-                <li>Datos de identificación básicos: nombre o alias y nivel educativo, solo si decides registrarte.</li>
-                <li>Datos de uso: información anónima sobre el progreso en actividades para mejorar los contenidos.</li>
-                <li><strong>No recopilamos datos sensibles, financieros, de ubicación ni de terceros.</strong></li>
-                <li>No se comparte ninguna información con empresas externas ni para fines comerciales.</li>
-            </ul>
-
-            <h3>Finalidad de uso</h3>
-            <p>La información se utiliza únicamente para:</p>
-            <ul>
-                <li>Brindar acceso personalizado a las actividades y recursos educativos.</li>
-                <li>Mejorar la calidad y organización de los materiales de aprendizaje.</li>
-                <li>Garantizar el correcto funcionamiento y seguridad de la plataforma.</li>
-            </ul>
-
-            <h3>Protección de datos</h3>
-            <p>Aplicamos medidas de seguridad para proteger la información de accesos no autorizados, pérdida o alteración. Tus datos se mantienen de forma confidencial y no se usan para fines distintos a los educativos.</p>
-
-            <h3>Derechos del usuario</h3>
-            <p>Puedes en cualquier momento consultar, modificar o eliminar la información que hayas proporcionado. Para ello, puedes contactarnos a través de los medios indicados en la aplicación.</p>
-
-            <h3>Actualizaciones</h3>
-            <p>Esta política podrá actualizarse para adaptarse a mejoras en la plataforma o normativas vigentes. Los cambios se publicarán en esta misma sección.</p>
-
-            <div class="fecha">Última actualización: 8 de julio de 2026</div>
-
-            <a href="index.html" class="volver">Volver al inicio</a>
-        </div>
-    </div>
 </body>
 </html>
