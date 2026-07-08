@@ -8,27 +8,53 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
         body { background-color: #f0f4f8; padding: 2rem; }
         header { text-align: center; margin-bottom: 3rem; }
-        h1 { color: #2c3e50; font-size: 2.2rem; }
-        p.subtitulo { color: #7f8c8d; font-size: 1.1rem; margin-top: 0.5rem; }
+        h1 { color: #2c3e50; font-size: 2.5rem; }
+        p.subtitulo { color: #7f8c8d; font-size: 1.2rem; margin-top: 0.5rem; }
+
         .grid-asignaturas {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: 2rem;
             max-width: 950px;
             margin: 0 auto;
         }
+
         .boton-asignatura {
             background: #ffffff;
-            padding: 1.5rem;
+            padding: 1.8rem 1rem;
             border-radius: 20px;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: transform 0.2s ease;
-            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
         }
+
         .boton-asignatura:hover { transform: translateY(-6px); }
-        .boton-asignatura img { width: 85px; height: 85px; margin-bottom: 1rem; }
-        .boton-asignatura h3 { color: #2c3e50; font-size: 1rem; }
+
+        .icono {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        h3 { color: #2c3e50; font-size: 1.1rem; }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 1.5rem;
+            color: #7f8c8d;
+        }
+
+        footer a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -38,26 +64,32 @@
     </header>
 
     <div class="grid-asignaturas">
-        <div class="boton-asignatura">
-            <img src="lengua-literatura.png" alt="Lengua y Literatura">
+        <a href="lengua.html" class="boton-asignatura">
+            <span class="icono">📖</span>
             <h3>Lengua y Literatura</h3>
-        </div>
-        <div class="boton-asignatura">
-            <img src="ingles.png" alt="Inglés">
+        </a>
+        <a href="ingles.html" class="boton-asignatura">
+            <span class="icono">🗣️</span>
             <h3>Inglés</h3>
-        </div>
-        <div class="boton-asignatura">
-            <img src="cultural-artistica.png" alt="Educación Cultural y Artística">
+        </a>
+        <a href="artistica.html" class="boton-asignatura">
+            <span class="icono">🎨</span>
             <h3>Educación Cultural y Artística</h3>
-        </div>
-        <div class="boton-asignatura">
-            <img src="educacion-fisica.png" alt="Educación Física">
+        </a>
+        <a href="fisica.html" class="boton-asignatura">
+            <span class="icono">⚽</span>
             <h3>Educación Física</h3>
-        </div>
-        <div class="boton-asignatura">
-            <img src="perfil.png" alt="Perfil">
+        </a>
+        <a href="perfil.html" class="boton-asignatura">
+            <span class="icono">👤</span>
             <h3>Perfil</h3>
-        </div>
+        </a>
     </div>
+
+    <footer>
+        <a href="privacidad.html">Políticas de Privacidad</a>
+        &nbsp; | &nbsp;
+        <span>© 2026 Aprendo360</span>
+    </footer>
 </body>
 </html>
