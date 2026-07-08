@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendo360 - App Educativa</title>
+    <title>Aprendo360 - Tu espacio de aprendizaje</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { background-color: #f0f4f8; padding: 2rem; }
-        header { text-align: center; margin-bottom: 3rem; }
-        h1 { color: #2c3e50; font-size: 2.5rem; }
-        p.subtitulo { color: #7f8c8d; font-size: 1.2rem; margin-top: 0.5rem; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-        .grid-asignaturas {
+        body {
+            background-color: #f0f4f8;
+            padding: 2.5rem 1.5rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #2d3748;
+            margin-bottom: 0.6rem;
+        }
+
+        .subtitulo {
+            font-size: 1.25rem;
+            color: #718096;
+        }
+
+        .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: 2rem;
@@ -19,37 +41,44 @@
             margin: 0 auto;
         }
 
-        .boton-asignatura {
+        .boton {
             background: #ffffff;
-            padding: 1.8rem 1rem;
+            padding: 2rem 1rem;
             border-radius: 20px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease;
             text-decoration: none;
-            color: inherit;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
         }
 
-        .boton-asignatura:hover { transform: translateY(-6px); }
+        .boton:hover {
+            transform: translateY(-6px);
+        }
 
         .icono {
-            font-size: 3rem;
+            font-size: 3.2rem;
             margin-bottom: 1rem;
             display: block;
+            color: #2b6cb0;
         }
 
-        h3 { color: #2c3e50; font-size: 1.1rem; }
+        .nombre {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2d3748;
+        }
 
         footer {
             text-align: center;
             margin-top: 4rem;
-            padding: 1.5rem;
-            color: #7f8c8d;
+            padding-top: 1.5rem;
+            color: #718096;
         }
 
         footer a {
-            color: #2980b9;
+            color: #2b6cb0;
             text-decoration: none;
+            margin: 0 0.5rem;
         }
 
         footer a:hover {
@@ -58,38 +87,46 @@
     </style>
 </head>
 <body>
+
     <header>
         <h1>Aprendo360</h1>
         <p class="subtitulo">Tu espacio de aprendizaje</p>
     </header>
 
-    <div class="grid-asignaturas">
-        <a href="lengua.html" class="boton-asignatura">
+    <div class="grid">
+        <a href="lengua.html" class="boton">
             <span class="icono">📖</span>
-            <h3>Lengua y Literatura</h3>
+            <div class="nombre">Lengua y Literatura</div>
         </a>
-        <a href="ingles.html" class="boton-asignatura">
+
+        <a href="ingles.html" class="boton">
             <span class="icono">🗣️</span>
-            <h3>Inglés</h3>
+            <div class="nombre">Inglés</div>
         </a>
-        <a href="artistica.html" class="boton-asignatura">
+
+        <a href="artistica.html" class="boton">
             <span class="icono">🎨</span>
-            <h3>Educación Cultural y Artística</h3>
+            <div class="nombre">Educación Cultural y Artística</div>
         </a>
-        <a href="fisica.html" class="boton-asignatura">
+
+        <a href="fisica.html" class="boton">
             <span class="icono">⚽</span>
-            <h3>Educación Física</h3>
+            <div class="nombre">Educación Física</div>
         </a>
-        <a href="perfil.html" class="boton-asignatura">
+
+        <a href="perfil.html" class="boton">
             <span class="icono">👤</span>
-            <h3>Perfil</h3>
+            <div class="nombre">Perfil</div>
         </a>
     </div>
 
     <footer>
-        <a href="privacidad.html">Políticas de Privacidad</a>
-        &nbsp; | &nbsp;
-        <span>© 2026 Aprendo360</span>
+        <a href="privacidad.html">Política de Privacidad</a>
+        &nbsp;|&nbsp;
+        <a href="uso.html">Información de uso</a>
+        <br>
+        <small>© 2026 Aprendo360</small>
     </footer>
+
 </body>
 </html>
